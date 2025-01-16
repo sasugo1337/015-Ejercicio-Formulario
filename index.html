@@ -8,216 +8,186 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <form action="">
-      <h2>Formulario</h2>
-      <div>
-        <label for="nombre">
-          <span>¿Cuál es tu nombre?</span>
-          <input
-            type="text"
-            name="nombre"
-            id="nombre"
-            autocomplete="name"
-            placeholder="nombre"
-            required
-          />
-        </label>
-      </div>
-      <div>
-        <label for="nacimiento">
-          <span>¿Cúal es tu fecha de nacimiento?</span>
-          <input type="date" name="nacimiento" id="nacimiento" required />
-        </label>
-      </div>
-      <div>
-        <label for="tipo_de_documento_de_identidad">
-          <span>¿Cuál es tu tipo de documento de identidad?</span>
-          <select
-            name="tipo_de_documento_de_identidad"
-            id="tipo_de_documento_de_identidad"
-            required
-          >
-            <option value="inicial" class="hidden_inicial"></option>
-            <option value="Cedula de Ciudadania">Cédula de Ciudadanía</option>
-            <option value="Cedula de Extranjeria">Cédula de Extranjería</option>
-            <option value="Tarjeta de Identidad">Tarjeta de identIdad</option>
-            <option value="Permiso especial de permanencia">
-              Permiso especial de permanencia
-            </option>
-            <option value="DNI-Documento Nacional de Identificacion">
-              DNI-Documento Nacional de Identificación
-            </option>
-            <option value="Pasaporte">Pasaporte</option>
-            <option value="Permiso por Proteccion Temporal">
-              Permiso por Protección Temporal
-            </option>
-          </select>
-        </label>
-      </div>
-      <div>
-        <label for="documento_de_identidad">
-          <span>¿Cuál es tu documento de identidad?</span>
-          <input
-            type="text"
-            name="documento_de_identidad"
-            id="documento_de_identidad"
-            pattern="\d{8,12}"
-            title="Debe ser un número de entre 8 y 12 dígitos"
-            placeholder="documento de identidad"
-            autocomplete="off"
-            required
-          />
-        </label>
-      </div>
-      <div>
-        <label for="ciudad">
-          <span>¿En qué ciudad vives?</span>
-          <select name="ciudad" id="ciudad" required>
-            <option value="inicial" class="hidden_inicial"></option>
-            <option value="Abejorral">Abejorral</option>
-            <option value="Acacías">Acacías</option>
-            <option value="Aguachica">Aguachica</option>
-            <option value="Aguadas">Aguadas</option>
-            <option value="Apartadó">Apartadó</option>
-            <option value="Arauca">Arauca</option>
-            <option value="Armenia">Armenia</option>
-            <option value="Baranoa">Baranoa</option>
-            <option value="Barrancabermeja">Barrancabermeja</option>
-            <option value="Barranquilla">Barranquilla</option>
-            <option value="Bello">Bello</option>
-            <option value="Bogotá">Bogotá</option>
-            <option value="Bucaramanga">Bucaramanga</option>
-            <option value="Buenaventura">Buenaventura</option>
-            <option value="Buga">Buga</option>
-            <option value="Cajicá">Cajicá</option>
-            <option value="Cali">Cali</option>
-            <option value="Cartagena">Cartagena</option>
-            <option value="Cartago">Cartago</option>
-            <option value="Caucasia">Caucasia</option>
-            <option value="Cereté">Cereté</option>
-            <option value="Chía">Chía</option>
-            <option value="Chigorodó">Chigorodó</option>
-            <option value="Ciénaga">Ciénaga</option>
-            <option value="Copacabana">Copacabana</option>
-            <option value="Cúcuta">Cúcuta</option>
-            <option value="Dosquebradas">Dosquebradas</option>
-            <option value="Duitama">Duitama</option>
-            <option value="Envigado">Envigado</option>
-            <option value="Facatativá">Facatativá</option>
-            <option value="Florencia">Florencia</option>
-            <option value="Floridablanca">Floridablanca</option>
-            <option value="Fusagasugá">Fusagasugá</option>
-            <option value="Girardot">Girardot</option>
-            <option value="Girón">Girón</option>
-            <option value="Honda">Honda</option>
-            <option value="Ibagué">Ibagué</option>
-            <option value="Ipiales">Ipiales</option>
-            <option value="Jamundí">Jamundí</option>
-            <option value="Leticia">Leticia</option>
-            <option value="Lorica">Lorica</option>
-            <option value="Maicao">Maicao</option>
-            <option value="Malambo">Malambo</option>
-            <option value="Manizales">Manizales</option>
-            <option value="Mariquita">Mariquita</option>
-            <option value="Medellín">Medellín</option>
-            <option value="Melgar">Melgar</option>
-            <option value="Montería">Montería</option>
-            <option value="Mosquera">Mosquera</option>
-            <option value="Neiva">Neiva</option>
-            <option value="Ocaña">Ocaña</option>
-            <option value="Pasto">Pasto</option>
-            <option value="Pamplona">Pamplona</option>
-            <option value="Palmira">Palmira</option>
-            <option value="Pereira">Pereira</option>
-            <option value="Popayán">Popayán</option>
-            <option value="Puerto Asís">Puerto Asís</option>
-            <option value="Quibdó">Quibdó</option>
-            <option value="Riohacha">Riohacha</option>
-            <option value="Rionegro">Rionegro</option>
-            <option value="San Andrés">San Andrés</option>
-            <option value="Santa Marta">Santa Marta</option>
-            <option value="Sincelejo">Sincelejo</option>
-            <option value="Soacha">Soacha</option>
-            <option value="Sogamoso">Sogamoso</option>
-            <option value="Sopó">Sopó</option>
-            <option value="Tuluá">Tuluá</option>
-            <option value="Tunja">Tunja</option>
-            <option value="Turbo">Turbo</option>
-            <option value="Valledupar">Valledupar</option>
-            <option value="Villa de Leyva">Villa de Leyva</option>
-            <option value="Villavicencio">Villavicencio</option>
-            <option value="Yopal">Yopal</option>
-            <option value="Zipaquirá">Zipaquirá</option>
-          </select>
-        </label>
-      </div>
-      <div>
-        <label for="telefono">
-          <span>¿Cuál es tu número de telefono?</span>
-          <input
-            type="tel"
-            name="telefono"
-            id="telefono"
-            autocomplete="tel"
-            placeholder="telefono"
-            required
-          />
-        </label>
-      </div>
-      <div>
-        <label for="discapacidad">
-          <span>¿Tienes algún tipo de discapacidad?</span>
-          <input type="checkbox" name="discapacidad" id="discapacidad" />
-
-          <!-- <select name="discapacidad" id="discapacidad">
-            <option value="inicial" class="hidden_inicial"></option>
-            <option value="Si">Si</option>
-            <option value="No">No</option>
-          </select> -->
-        </label>
-      </div>
-      <div>
-        <label for="colegio">
-          <span>¿En qué colegio estudias?</span>
-          <input
-            type="text"
-            name="colegio"
-            id="colegio"
-            placeholder="colegio"
-            required
-          />
-        </label>
-      </div>
-      <div>
-        <label for="jornada">
-          <span>¿En qué jornada estas?</span>
-          <select name="jornada" id="jornada" required>
-            <option value="inicial" class="hidden_inicial"></option>
-            <option value="mañana">mañana</option>
-            <option value="tarde">tarde</option>
-          </select>
-        </label>
-      </div>
-      <div>
-        <label for="grado">
-          <span>¿En qué curso estas?</span>
-          <select name="grado" id="grado" required>
-            <option value="inicial" class="hidden_inicial"></option>
-            <option value="Primero">Primero</option>
-            <option value="Segundo">Segundo</option>
-            <option value="Tercero">Tercero</option>
-            <option value="Cuarto">Cuarto</option>
-            <option value="Quinto">Quinto</option>
-            <option value="Sexto">Sexto</option>
-            <option value="Septimo">Septimo</option>
-            <option value="Octavo">Octavo</option>
-            <option value="Noveno">Noveno</option>
-            <option value="Decimo">Décimo</option>
-            <option value="Undecimo">Undécimo</option>
-          </select>
-        </label>
-      </div>
-      <button type="submit">Enviar</button>
-    </form>
+    <main>
+      <form action="">
+        <h1>Formulario</h1>
+        <div>
+          <label for="nombre">
+            <span>¿Cuál es tu nombre?</span>
+            <input type="text" name="nombre" id="nombre" autocomplete="name" placeholder="nombre" required />
+          </label>
+        </div>
+        <div>
+          <label for="nacimiento">
+            <span>¿Cúal es tu fecha de nacimiento?</span>
+            <input type="date" name="nacimiento" id="nacimiento" required />
+          </label>
+        </div>
+        <div>
+          <label for="tipo_de_documento_de_identidad">
+            <span>¿Cuál es tu tipo de documento de identidad?</span>
+            <select name="tipo_de_documento_de_identidad" id="tipo_de_documento_de_identidad" required>
+              <option value="inicial" class="hidden_inicial">tipo de documento</option>
+              <option value="Cedula de Ciudadania">Cédula de Ciudadanía</option>
+              <option value="Cedula de Extranjeria">Cédula de Extranjería</option>
+              <option value="Tarjeta de Identidad">Tarjeta de identIdad</option>
+              <option value="Permiso especial de permanencia">Permiso especial de permanencia</option>
+              <option value="DNI-Documento Nacional de Identificacion">DNI-Documento Nacional de Identificación</option>
+              <option value="Pasaporte">Pasaporte</option>
+              <option value="Permiso por Proteccion Temporal">Permiso por Protección Temporal</option>
+            </select>
+          </label>
+        </div>
+        <div>
+          <label for="documento_de_identidad">
+            <span>¿Cuál es tu documento de identidad?</span>
+            <input
+              type="text"
+              name="documento_de_identidad"
+              id="documento_de_identidad"
+              pattern="\d{8,12}"
+              title="Debe ser un número de entre 8 y 12 dígitos"
+              placeholder="documento de identidad"
+              autocomplete="off"
+              required
+            />
+          </label>
+        </div>
+        <div>
+          <label for="ciudad">
+            <span>¿En qué ciudad vives?</span>
+            <select name="ciudad" id="ciudad" required>
+              <option value="inicial" class="hidden_inicial">ciudad</option>
+              <option value="Abejorral">Abejorral</option>
+              <option value="Acacías">Acacías</option>
+              <option value="Aguachica">Aguachica</option>
+              <option value="Aguadas">Aguadas</option>
+              <option value="Apartadó">Apartadó</option>
+              <option value="Arauca">Arauca</option>
+              <option value="Armenia">Armenia</option>
+              <option value="Baranoa">Baranoa</option>
+              <option value="Barrancabermeja">Barrancabermeja</option>
+              <option value="Barranquilla">Barranquilla</option>
+              <option value="Bello">Bello</option>
+              <option value="Bogotá">Bogotá</option>
+              <option value="Bucaramanga">Bucaramanga</option>
+              <option value="Buenaventura">Buenaventura</option>
+              <option value="Buga">Buga</option>
+              <option value="Cajicá">Cajicá</option>
+              <option value="Cali">Cali</option>
+              <option value="Cartagena">Cartagena</option>
+              <option value="Cartago">Cartago</option>
+              <option value="Caucasia">Caucasia</option>
+              <option value="Cereté">Cereté</option>
+              <option value="Chía">Chía</option>
+              <option value="Chigorodó">Chigorodó</option>
+              <option value="Ciénaga">Ciénaga</option>
+              <option value="Copacabana">Copacabana</option>
+              <option value="Cúcuta">Cúcuta</option>
+              <option value="Dosquebradas">Dosquebradas</option>
+              <option value="Duitama">Duitama</option>
+              <option value="Envigado">Envigado</option>
+              <option value="Facatativá">Facatativá</option>
+              <option value="Florencia">Florencia</option>
+              <option value="Floridablanca">Floridablanca</option>
+              <option value="Fusagasugá">Fusagasugá</option>
+              <option value="Girardot">Girardot</option>
+              <option value="Girón">Girón</option>
+              <option value="Honda">Honda</option>
+              <option value="Ibagué">Ibagué</option>
+              <option value="Ipiales">Ipiales</option>
+              <option value="Jamundí">Jamundí</option>
+              <option value="Leticia">Leticia</option>
+              <option value="Lorica">Lorica</option>
+              <option value="Maicao">Maicao</option>
+              <option value="Malambo">Malambo</option>
+              <option value="Manizales">Manizales</option>
+              <option value="Mariquita">Mariquita</option>
+              <option value="Medellín">Medellín</option>
+              <option value="Melgar">Melgar</option>
+              <option value="Montería">Montería</option>
+              <option value="Mosquera">Mosquera</option>
+              <option value="Neiva">Neiva</option>
+              <option value="Ocaña">Ocaña</option>
+              <option value="Pasto">Pasto</option>
+              <option value="Pamplona">Pamplona</option>
+              <option value="Palmira">Palmira</option>
+              <option value="Pereira">Pereira</option>
+              <option value="Popayán">Popayán</option>
+              <option value="Puerto Asís">Puerto Asís</option>
+              <option value="Quibdó">Quibdó</option>
+              <option value="Riohacha">Riohacha</option>
+              <option value="Rionegro">Rionegro</option>
+              <option value="San Andrés">San Andrés</option>
+              <option value="Santa Marta">Santa Marta</option>
+              <option value="Sincelejo">Sincelejo</option>
+              <option value="Soacha">Soacha</option>
+              <option value="Sogamoso">Sogamoso</option>
+              <option value="Sopó">Sopó</option>
+              <option value="Tuluá">Tuluá</option>
+              <option value="Tunja">Tunja</option>
+              <option value="Turbo">Turbo</option>
+              <option value="Valledupar">Valledupar</option>
+              <option value="Villa de Leyva">Villa de Leyva</option>
+              <option value="Villavicencio">Villavicencio</option>
+              <option value="Yopal">Yopal</option>
+              <option value="Zipaquirá">Zipaquirá</option>
+            </select>
+          </label>
+        </div>
+        <div>
+          <label for="telefono">
+            <span>¿Cuál es tu número de telefono?</span>
+            <input type="tel" name="telefono" id="telefono" autocomplete="tel" placeholder="telefono" required />
+          </label>
+        </div>
+        <div>
+          <label for="discapacidad">
+            <span>¿Tienes algún tipo de discapacidad?</span>
+            <select name="discapacidad" id="discapacidad">
+              <option value="inicial" class="hidden_inicial">discapacidad</option>
+              <option value="Si">Si</option>
+              <option value="No">No</option>
+            </select>
+          </label>
+        </div>
+        <div>
+          <label for="colegio">
+            <span>¿En qué colegio estudias?</span>
+            <input type="text" name="colegio" id="colegio" placeholder="colegio" required />
+          </label>
+        </div>
+        <div>
+          <label for="jornada">
+            <span>¿En qué jornada estas?</span>
+            <select name="jornada" id="jornada" required>
+              <option value="inicial" class="hidden_inicial">jornada</option>
+              <option value="mañana">mañana</option>
+              <option value="tarde">tarde</option>
+            </select>
+          </label>
+        </div>
+        <div>
+          <label for="grado">
+            <span>¿En qué curso estas?</span>
+            <select name="grado" id="grado" required>
+              <option value="inicial" class="hidden_inicial">curso</option>
+              <option value="Primero">Primero</option>
+              <option value="Segundo">Segundo</option>
+              <option value="Tercero">Tercero</option>
+              <option value="Cuarto">Cuarto</option>
+              <option value="Quinto">Quinto</option>
+              <option value="Sexto">Sexto</option>
+              <option value="Septimo">Septimo</option>
+              <option value="Octavo">Octavo</option>
+              <option value="Noveno">Noveno</option>
+              <option value="Decimo">Décimo</option>
+              <option value="Undecimo">Undécimo</option>
+            </select>
+          </label>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </main>
   </body>
 </html>

@@ -1,164 +1,81 @@
-.hidden_inicial {
-  display: none;
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+  --light_blue: #99d7ff;
+  --dark_blue: #114b8b;
+  --black: #000000;
 }
 
-body {
-  background-color: purple;
-  color: yellow;
-  font-family: cursive;
-}
-
-button {
-  background-color: yellow;
-  color: purple;
-  font-family: cursive;
-  border: none;
-}
-
-/* body {
-  font-family: "Arial", sans-serif;
-  background: #1e1e1e;
-  color: #f5f5f5;
-  margin: 0;
+* {
+  box-sizing: border-box;
   padding: 0;
+  margin: 0;
+  font-family: "Rubik", serif;
+}
+body {
+  background: linear-gradient(45deg, var(--dark_blue), var(--light_blue)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 2.5rem;
+}
+
+html {
+  font-size: 16px;
+}
+
+main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  overflow: auto;
-  box-sizing: border-box;
 }
 
 form {
-  background: #2a2a2a;
-  width: 100%;
-  max-width: 600px;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
-  box-sizing: border-box;
-  transition: transform 0.3s ease-in-out;
-  overflow-y: auto;
-  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 0.625rem 0.0625rem black;
 }
 
-form:hover {
-  transform: scale(1.03);
-}
-
-form h2 {
-  text-align: center;
-  font-size: 26px;
-  font-weight: 600;
-  color: #4c92ff;
-  margin-bottom: 20px;
-  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-label {
-  display: block;
-  font-size: 18px;
-  font-weight: 500;
-  color: #d1d1d1;
-  margin-bottom: 10px;
-  transition: color 0.3s ease-in-out;
-}
-
-input[type="text"],
-input[type="date"],
-input[type="tel"],
-select {
-  width: 100%;
-  padding: 15px 20px;
-  font-size: 16px;
-  border: 2px solid #444;
-  border-radius: 8px;
-  background: #333;
-  color: #fff;
-  margin-bottom: 20px;
-  box-sizing: border-box;
-  transition: all 0.3s ease-in-out;
-}
-
-input[type="text"]:focus,
-input[type="date"]:focus,
-input[type="tel"]:focus,
-select:focus {
-  border-color: #4c92ff;
-  box-shadow: 0 0 8px rgba(76, 146, 255, 0.5);
-  outline: none;
+select,
+input {
+  display: flex;
+  width: 80%;
+  height: 3.125rem;
+  margin: 0.5rem auto;
+  padding: 0 0 0 0.25rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 0 0.625rem 0.0625rem black;
+  background: linear-gradient(315deg, var(--dark_blue), var(--light_blue)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 button {
-  width: 100%;
-  padding: 15px;
-  background-color: #4c92ff;
-  color: white;
+  width: 80%;
+  height: 3.125rem;
+  margin: 1.6rem auto 0.5rem auto;
+  font-size: 1.2rem;
+  font-weight: bold;
   border: none;
-  border-radius: 8px;
-  font-size: 18px;
-  cursor: pointer;
-  margin-top: 20px;
-  transition: background-color 0.3s ease-in-out;
+  border-radius: 1rem;
+  box-shadow: 0 0 0.625rem 0.0625rem var(--black);
+  background: linear-gradient(315deg, var(--dark_blue), var(--light_blue)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-button:hover {
-  background-color: #0066cc;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+label {
+  padding: 0 0 0 10%;
 }
 
-@media screen and (max-width: 768px) {
-  form {
-    width: 90%;
-    padding: 20px;
-  }
-
-  form h2 {
-    font-size: 22px;
-  }
-
-  label {
-    font-size: 16px;
-  }
-
-  input[type="text"],
-  input[type="date"],
-  input[type="tel"],
-  select {
-    padding: 12px;
-    font-size: 14px;
-  }
-
-  button {
-    padding: 12px;
-    font-size: 16px;
-  }
+h1 {
+  text-align: center;
+  margin: 0.5rem;
 }
 
-@media screen and (max-width: 480px) {
-  form {
-    width: 100%;
-    padding: 15px;
-  }
+::placeholder {
+  color: var(--black);
+}
 
-  form h2 {
-    font-size: 20px;
-  }
-
-  label {
-    font-size: 14px;
-  }
-
-  input[type="text"],
-  input[type="date"],
-  input[type="tel"],
-  select {
-    padding: 10px;
-    font-size: 12px;
-  }
-
-  button {
-    padding: 10px;
-    font-size: 14px;
-  }
-} */
+.hidden_inicial {
+  display: none;
+}
