@@ -1,0 +1,18 @@
+main {
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 0.625rem 0.0625rem black;
+}
+
+select,
+input {
+  font-size: 1.1rem;
+}
+
+button {
+  font-size: 1.2rem;
+}
+
+h1 {
+  font-size: 2rem;
+}

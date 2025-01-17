@@ -23,27 +23,37 @@ html {
 
 main {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  width: 70vw;
-  padding: 2.5rem;
-  border-radius: 1rem;
-  box-shadow: 0 0 0.625rem 0.0625rem black;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+
+div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+label {
+  display: inline-block;
+  width: 90%;
 }
 
 select,
 input {
-  display: flex;
-  width: 80%;
+  padding: 0.625rem;
+  margin: 0.5rem 0;
+  width: 100%;
   height: 3.125rem;
-  margin: 0.5rem auto;
-  padding: 0 0 0 0.25rem;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   font-weight: bold;
   border: none;
   border-radius: 1rem;
@@ -52,10 +62,10 @@ input {
 }
 
 button {
-  width: 80%;
+  margin: 0.5rem;
+  width: 90%;
   height: 3.125rem;
-  margin: 1.6rem auto 0.5rem auto;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bold;
   border: none;
   border-radius: 1rem;
@@ -63,13 +73,14 @@ button {
   background: linear-gradient(315deg, var(--dark_blue), var(--light_blue)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-label {
-  padding: 0 0 0 10%;
-}
-
 h1 {
   text-align: center;
-  margin: 0.5rem;
+  font-size: 1.5rem;
+}
+
+option {
+  font-size: 1rem;
+  background-color: #99d7ff;
 }
 
 ::placeholder {
