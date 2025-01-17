@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
 :root {
   --light_blue: #99d7ff;
@@ -10,7 +10,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: 'Rubik', serif;
+  font-family: "Rubik", serif;
 }
 body {
   background: linear-gradient(45deg, var(--dark_blue), var(--light_blue)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -92,6 +92,6 @@ option {
 }
 
 .formulario__date::before {
-  content: 'Fecha';
+  content: "fecha";
   display: flex;
 }
